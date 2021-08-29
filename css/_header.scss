@@ -1,0 +1,51 @@
+$bluecolor: #3498db; 
+.main-header{
+    width: 100%;
+    height: 10vh;
+    background-image: url("https://t4.ftcdn.net/jpg/01/58/92/45/240_F_158924580_lw1uyyt1y48UYdfFmAoOoyCYg9MO4oLf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .sub-header{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 110%;
+        i{
+            color: white;
+            text-align: center;
+            font-size: 70px;
+        }
+        h2{
+            color: white;
+            font-size: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            word-spacing: 3px;
+            margin-top: 20px;
+        }
+        hr{
+          @include line-height (10%,5px,#3498db);
+        }
+        form{
+            width: 70%;
+            margin: auto;
+            height:35px;
+            input{
+                border-radius: 20px;
+            }
+        }
+        button{
+            border-radius: 50px;
+            margin-top: 20px;
+            padding: 5px 30px 5px 30px;
+            font-size: 15px;
+            background-color: $bluecolor;
+        }
+       
+    }
+}
+
+

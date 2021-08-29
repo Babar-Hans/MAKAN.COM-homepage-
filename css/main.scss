@@ -1,0 +1,35 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+// _____________________Line-height-hr-tag________________________
+@mixin line-height($value1,$value2,$value3){
+    width: $value1;
+    height: $value2;
+    background-color: $value3;
+}
+
+
+
+
+
+
+
+
+
+
+// ------------------------- import files ------------------------
+@import "header";
+@import "aboutsection";
+@import "contactsection";
+@import "footersection"
+
+
+
+
+
+    

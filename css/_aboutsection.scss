@@ -1,0 +1,191 @@
+.main-about-section{
+    width: 100%;
+    height: auto;
+    // background-color: red;
+    padding:10px 10px 10px 10px;
+    margin-top: 70px;
+
+    h6{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold
+    }
+    hr{
+        @include line-height (5%,5px,#3498db);
+        margin: auto;
+      }
+      
+}
+
+
+.sub-about-section{
+    width: 100%;
+    margin-top:30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: palevioletred;
+    padding:0px 10px 0px 10px;
+
+    .precise-value-box{
+    box-sizing:content-box;
+    width:35%;
+    height:300px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 10px 4px lightgray;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    i{
+        color: $bluecolor;
+        font-size:40px; 
+        margin-top: 20px;
+    }
+    h5{
+        text-align: center;
+        width:70%;
+        padding: 5px 0px 5px 0px;
+        background-color: $bluecolor;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    p{
+        text-align:center;
+        font-size: 15px;
+        width: 100%;
+        padding: 0px 5px 0px 5px;
+        margin-top: 20px
+    }
+    hr{
+        @include line-height (50%,5px,#3498db);
+        margin: auto;
+      }
+    }
+    .browse-fine-box{
+        @extend .precise-value-box;
+    }
+    .no-info-box{
+        @extend .precise-value-box;
+    }
+}
+
+
+// _____________________media query of about section 791px____________________
+
+@media screen and (max-width: 791px){
+
+    .sub-about-section{
+    width: 100%;
+    margin-top:10px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0px 1px 0px 1px;
+    flex-wrap: wrap;
+    
+    .precise-value-box{
+    box-shadow: 1px 1px 10px 4px lightgray;
+    padding: 10px 10px 20px 10px;
+    width:90%;
+    height:300px;
+    margin:3px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    }
+   .precise-value-box i{
+        color: $bluecolor;
+        font-size:40px;
+    }
+    .precise-value-box h5{
+        text-align: center;
+        width:70%;
+        padding: 5px 0px 5px 0px;
+        background-color: $bluecolor;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+   .precise-value-box p{
+        font-size: 15px;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+
+    }
+  
+    
+    .browse-fine-box{
+        box-shadow: 1px 1px 10px 4px lightgray;
+        padding: 10px 10px 20px 10px;
+        width:90%;
+        height:300px;
+        margin:3px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .browse-fine-box i{
+        color: $bluecolor;
+        font-size:40px;
+    }
+    .browse-fine-box h5{
+        text-align: center;
+        width:70%;
+        padding: 5px 0px 5px 0px;
+        background-color: $bluecolor;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+   .browse-fine-box p{
+        font-size: 15px;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+
+    }
+    .no-info-box{
+        box-shadow: 1px 1px 10px 4px lightgray;
+        padding: 10px 10px 20px 10px;
+        width:90%;
+        height:300px;
+        margin:3px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .no-info-box i{
+        color: $bluecolor;
+        font-size:40px;
+    }
+    .no-info-box h5{
+        text-align: center;
+        width:70%;
+        padding: 5px 0px 5px 0px;
+        background-color: $bluecolor;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+   .no-info-box p{
+        font-size: 15px;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+
+    }
+}
+
+}

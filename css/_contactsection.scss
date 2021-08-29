@@ -1,0 +1,44 @@
+.main-contact-section{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    // background-color: $bluecolor;
+    padding:10px 10px 10px 10px;
+    h6{
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+    }
+    hr{
+        @include line-height (5%,5px,$bluecolor);
+        margin: auto;
+      }
+    .sub-contact-section{
+        width: 100%;
+        height: auto;
+        // background-color: aqua;
+        margin-top: 25px;
+    }
+}
+
+.contact-form{
+    .row{
+        margin: 5px;
+    }
+    h6{
+        margin-top: 30px;
+        font-size: 17px;
+        color: dimgray;
+    }
+
+}
+
+.map{
+    h6{
+        margin-top: 30px;
+        font-size: 17px;
+        color: dimgray;
+    }   
+}
